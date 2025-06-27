@@ -32,6 +32,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [solution URL ](https://github.com/amiramii/Frontend-Mentor-Projects/tree/main/blog-preview-card-main)
 - Live Site URL: [blog-preview-card](https://blog-preview-card-two-gray.vercel.app/)
 
 ## My process
