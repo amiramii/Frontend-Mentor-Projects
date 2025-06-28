@@ -4,13 +4,20 @@
     font-weight: 400 700;
     font-display: swap;
 }
+:root{
+    --background-color:hsl(0, 0%, 8%);
+    --container-background-color:hsl(0, 0%, 12%);
+    --white-color:hsl(0, 0%, 100%) ;
+    --light-gray-color:hsl(0, 0%, 20%);
+    --neon-color:hsl(75, 94%, 57%);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color:hsl(0, 0%, 8%);
+    background-color:var(--background-color);
     display: grid;
     place-content: center;
     height: 100vh;
@@ -19,11 +26,11 @@ body{
 
 }
 .container{
-    height: 700px;
-    width: 400px;
+    height: 40rem;
+    width: 25rem;
     display: grid;
-    place-content: auto center;
-    background-color:hsl(0, 0%, 12%);
+    place-content: center;
+    background-color:var(--container-background-color);
     margin:auto;
     align-items: center;
     border-radius: 15px;
@@ -41,13 +48,13 @@ img{
     max-width: 90px;
 }
 .username{
-    color:hsl(0, 0%, 100%) ;
+    color:var(--white-color);
 }
 .user-address{
-    color:hsl(75, 94%, 57%);
+    color:var(--neon-color);
 }
 .user-description{
-    color:hsl(0, 0%, 100%);
+    color:var(--white-color);
     font-size: 14px;
     text-wrap: wrap;
 }
@@ -60,46 +67,41 @@ img{
     
 }
 .link{
-    background-color:hsl(0, 0%, 20%);
+    background-color:var(--light-gray-color);
     text-align: center; 
     place-content: center;
     text-decoration: none;
-    color: hsl(0, 0%, 100%) ;
+    color: var(--white-color) ;
     border-radius: 10px;
 }
 .link:hover{
-    background-color:hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 20%);
+    background-color:var(--neon-color);
+    color: var(--light-gray-color);
 }
 .link:focus{
-    outline: 1px solid hsl(75, 94%, 57%);
+    outline: 1px solid var(--neon-color);
 
 }
 footer{
     padding: 20px;
-    color:hsl(0, 0%, 100%) ;
+    color:var(--white-color);
 }
 .attribution { 
     font-size: 11px;
     text-align: center; 
 }
 .attribution a { 
-    color: hsl(75, 94%, 57%); 
+    color:var(--neon-color); 
 }
 @media screen and (max-width:480px) {
     .container{
-        width:330px;
-        height: 600px;
-        margin: auto;
+        height: 38rem;
+        width: 21rem;
+        margin-top: 10px;
     
     }
     .user-social-links{
-        display: grid;
-        grid-template-rows: 3rem 3rem 3rem 3rem 3rem ;
-        grid-template-columns: 15rem;
-        place-content: center;
-        gap: 20px;
-        
+        grid-template-columns: 18rem;
     }
     
 }
